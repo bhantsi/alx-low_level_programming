@@ -21,10 +21,4 @@ _strlen(char *s)
 
 	return (n);
 
-
-B
-B
-B
-B
-B
 }
