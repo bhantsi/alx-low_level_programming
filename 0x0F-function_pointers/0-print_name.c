@@ -8,10 +8,10 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-    if (name && f)
-    {
-    f(name);
-    }
+if (name && f)
+{
+f(name);
+}
 }
 
 /**
@@ -20,7 +20,7 @@ void print_name(char *name, void (*f)(char *))
  */
 void print_name_as_is(char *name)
 {
-    printf("Hello, my name is %s\n", name);
+printf("Hello, my name is %s\n", name);
 }
 
 /**
@@ -29,19 +29,19 @@ void print_name_as_is(char *name)
  */
 void print_name_uppercase(char *name)
 {
-    printf("Hello, my uppercase name is ");
-    while (*name)
-    {
-        if (*name >= 'a' && *name <= 'z')
-        {
-            putchar(*name - 'a' + 'A');
-        }
-        else
-        {
-            putchar(*name);
-        }
-        name++;
-    }
-    printf("\n");
+printf("Hello, my uppercase name is ");
+while   (*name)
+{
+if (*name >= 'a' && *name <= 'z')
+{
+putchar(*name - 'a' + 'A');
+}
+else
+{
+putchar(*name);
+}
+name++;
+}
+printf("\n");
 }
 
