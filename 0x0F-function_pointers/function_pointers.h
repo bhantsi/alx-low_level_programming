@@ -1,6 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
-
+#include <stddef.h>
 /**
  * print_name - Print a name using a function pointer.
  * @name: The name to be printed.
@@ -19,6 +19,6 @@ void print_name_as_is(char *name);
  * @name: The name of the person.
  */
 void print_name_uppercase(char *name);
-
+void array_iterator(int *array, size_t size, void (*action)(int));
 #endif /* FUNCTION_POINTERS_H */
 
